@@ -11,7 +11,7 @@ html {
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
-*/
+ */
 html,
 body,
 div,
@@ -137,7 +137,7 @@ table {
     border-spacing: 0;
 }
 
-/** Responsive Images & Embeds **/
+/* Responsive Images & Embeds */
 img,
 iframe,
 object,
@@ -145,18 +145,4 @@ embed,
 figure {
     max-width: 100%;
     height: auto;
-}
-
-/** Wordpress Compliance **/
-
-.wp-caption,
-.wp-caption-text,
-.sticky,
-.screen-reader-text,
-.gallery-caption,
-.bypostauthor,
-.aligncenter,
-.alignleft,
-.alignright {
-    list-style-type: none;
 }

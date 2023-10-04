@@ -83,14 +83,15 @@
 ## Included Assets
 - Github Repo: [github.com/domesticjones/cssmarkup-lesson1](https://github.com/domesticjones/cssmarkup-lesson1)
 - Icons (Icomoon TTF with Fallback Set):
-  - Home 
-  - Users 
-  - User 
-  - Book 
+  - Book
+  - Dashboard
+  - Globe
   - Letter
   - Lock
-  - Spinner 
+  - Spinner
+  - User
+  - Users
 - Graphics
-  - Logo
-  - Emblem
   - Background
+  - Emblem
+  - Logo

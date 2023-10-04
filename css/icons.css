@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'sampleapp-icons';
+    src:
+            url('../fonts/sampleapp-icons.ttf?n62meq') format('truetype'),
+            url('../fonts/sampleapp-icons.woff?n62meq') format('woff'),
+            url('../fonts/sampleapp-icons.svg?n62meq#sampleapp-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon,
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sampleapp-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+    content: "\e900";
+}
+.icon-dashboard:before {
+    content: "\e901";
+}
+.icon-globe:before {
+    content: "\e902";
+}
+.icon-letter:before {
+    content: "\e903";
+}
+.icon-spinner:before {
+    content: "\e904";
+}
+.icon-user:before {
+    content: "\e905";
+}
+.icon-users:before {
+    content: "\e906";
+}
