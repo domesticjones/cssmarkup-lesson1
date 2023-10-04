@@ -18,7 +18,7 @@ $copyrightYear.attr('datetime', dateTodayIso);
 // LOGIN: Close Modal on Button Click
 
 // HOME: Inject Today's Date
-$('#home time').each((i,e) => {
+$('#dashboard time').each((i,e) => {
     const $this = $(e);
     $this.attr('datetime', dateTodayIso);
     $this.find('span').text(dateTodayDay);

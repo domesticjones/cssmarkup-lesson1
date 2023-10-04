@@ -7,15 +7,15 @@
 @import 'css/variables.css';
 @import 'css/reset.css';
 @import 'css/icons.css';
-
-/* Global */
 @import 'css/base.css';
-@import 'css/header.css';
-@import 'css/footer.css';
 
 /* Blocks & Partials */
 @import 'css/partials.css';
 @import 'css/blocks.css';
+
+/* Global Components */
+@import 'css/header.css';
+@import 'css/footer.css';
 
 /* Pages & Views */
 @import 'css/pages.css';

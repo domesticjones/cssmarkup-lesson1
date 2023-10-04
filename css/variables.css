@@ -9,6 +9,17 @@
     --layout-width--read: 720px;
     --layout-width--field: 480px;
 
+    /* Spacing */
+    --space-mobile: 5vw;
+    --space-mobile--half: 2.5vw;
+    --space-mobile--double: 10vw;
+    --space-tablet: 3vw;
+    --space-tablet--half: 1.5vw;
+    --space-tablet--double: 6vw;
+    --space-desktop: 2rem;
+    --space-desktop--half: 1rem;
+    --space-desktop--double: 4rem;
+
     /* Typography */
     --font-family--default: 'Archivo', sans-serif;
     --font-family--heading: 'Archivo Narrow', sans-serif;

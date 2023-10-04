@@ -82,7 +82,7 @@
 
 ## Included Assets
 - Github Repo: [github.com/domesticjones/cssmarkup-lesson1](https://github.com/domesticjones/cssmarkup-lesson1)
-- Icons (Icomoon TTF with Fallback Set):
+- Icon Deck:
   - Book
   - Dashboard
   - Globe
