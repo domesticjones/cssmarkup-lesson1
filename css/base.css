@@ -1,0 +1,131 @@
+html,
+body {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    font-size: var(--font-size--default);
+}
+
+body {
+    font-family: var(--font-family--default);
+    font-weight: var(--font-weight--normal);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    font-size: 1rem;
+    font-smoothing: antialiased;
+}
+
+a {
+    color: var(--color-accent);
+    font-weight: var(--font-weight--bold);
+    text-decoration: none;
+}
+
+/* Heading Level Elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    padding: 0;
+    margin: 1rem 0;
+    line-height: 1;
+    font-family: var(--font-family--heading);
+    font-weight: var(--font-weight--bold);
+    clear: both;
+}
+
+h1 {
+    font-size: var(--font-size--jumbo);
+}
+
+h2 {
+    font-size: var(--font-size--huge);
+}
+
+h3 {
+    font-size: var(--font-size--large);
+}
+
+/*!** List Level Elements **!*/
+/*ul,*/
+/*ol {*/
+/*    margin: 0 0 1.5em 1.5em;*/
+/*    padding: 0;*/
+
+/*& li {*/
+/*      margin-bottom: 0.25em;*/
+/*      line-height: 1.5em;*/
+/*  }*/
+
+/*& ul,*/
+/*& ol {*/
+/*      margin: 0 0 0 2em*/
+/*  }*/
+/*}*/
+
+/*ul {*/
+/*    list-style-type: disc;*/
+/*}*/
+
+/*ol {*/
+/*    list-style-type: decimal;*/
+/*}*/
+
+/*!** Paragraph Level Elements **!*/
+/*p {*/
+/*    margin: 0;*/
+/*    padding: 0 0 1.5em 0;*/
+/*    line-height: 1.5em;*/
+/*}*/
+
+/*blockquote {*/
+/*    display: inline-block;*/
+/*    padding: 1em 1.25em 1em 3em;*/
+/*    margin: 0 0 1.25em 0;*/
+/*    position: relative;*/
+
+/*&:before {*/
+/*     content: '\201C';*/
+/*     display: block;*/
+/*     position: absolute;*/
+/*     font-family: Georgia, serif;*/
+/*     font-size: 4em;*/
+/*     left: 0.25em;*/
+/*     top: 0;*/
+/* }*/
+/*}*/
+
+/*!***/
+/*  Inline Level Elements*/
+/*  ---------------------------------------------------------------------- *!*/
+/*strong {*/
+/*    @include fontWeight(bold);*/
+/*}*/
+
+/*em {*/
+/*    font-style: italic;*/
+/*}*/
+
+/*small {*/
+/*    font-size: 0.75em;*/
+/*}*/
+
+/*sup {*/
+/*    line-height: 1;*/
+/*    font-size: 0.65em;*/
+/*    vertical-align: super;*/
+/*}*/
+
+/*sub {*/
+/*    line-height: 1;*/
+/*    font-size: 0.65em;*/
+/*    vertical-align: sub;*/
+/*}*/

@@ -14,6 +14,16 @@ $copyrightYear.text(dateTodayYear);
 $copyrightYear.attr('datetime', dateTodayIso);
 
 // MENU: Find Component on Click
+$('.menu a').click(e => {
+    e.preventDefault();
+    const menuClickTarget = $(e.currentTarget).attr('href');
+    const menuClickTargetName = menuClickTarget.substring(1, menuClickTarget.length);
+    $('#loading').show();
+    $('#loading h3 span').text(menuClickTargetName);
+    setTimeout(() => {
+        $('#loading').fadeOut();
+    }, 2000);
+})
 
 // LOGIN: Close Modal on Button Click
 
