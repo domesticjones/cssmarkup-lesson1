@@ -18,9 +18,9 @@
     <nav id="nav-primary" class="nav">
         <ul class="menu menu-icons">
             <li class="menu-item">
-                <a href="#home">
+                <a href="#dashboard">
                     <span class="icon icon-home"></span>
-                    <strong>Home</strong>
+                    <strong>Dashboard</strong>
                 </a>
             </li>
             <li class="menu-item">
@@ -63,9 +63,9 @@
 </header>
 
 <main id="content">
-    <article id="home" class="page page-home">
-        <header>
-            <h1>Your Dashboard</h1>
+    <article id="dashboard" class="page page-dashboard">
+        <header class="partial partial-header">
+            <h1>Dashboard</h1>
         </header>
         <section class="block block-text">
             <h2>
@@ -85,7 +85,7 @@
                     <li class="menu-item">
                         <a href="#library">
                             <span class="icon icon-book"></span>
-                            <strong>View Entire Library</strong>
+                            <strong>Further Reading Library</strong>
                         </a>
                     </li>
                     <li class="menu-item">
@@ -99,17 +99,87 @@
         </section>
     </article>
     <article id="users" class="page page-users">
-        asdf
+        <header class="partial partial-header">
+            <h1>Users List</h1>
+            <p>Sorted alphabetically</p>
+        </header>
+        <section class="block block-users">
+            <table id="users-list" class="users">
+                <thead>
+                    <tr>
+                        <th class="photo"></th>
+                        <th class="id">ID</th>
+                        <th class="name">Name</th>
+                        <th class="email">Email</th>
+                        <th class="dbid">Database ID</th>
+                        <th class="date">Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="user-cbm5b9gbrj" class="user">
+                        <th class="photo"><img src="photo-ryan.jpg" width="50" height="50" alt="Photo of Ryan" /></th>
+                        <td class="id">4</td>
+                        <td class="name">Caufield, Ryan</td>
+                        <td class="email">ryan.caufield@boiseschools.edu</td>
+                        <td class="dbid">cbm5b9gbrj</td>
+                        <td class="date"><time datetime="2022-04-10">2022-04-10</time></td>
+                    </tr>
+                    <tr id="user-gjd4qfvd40" class="user">
+                        <th class="photo"><img src="photo-ryan.jpg" width="50" height="50" alt="Photo of Todd" /></th>
+                        <td class="id">2</td>
+                        <td class="name">Dunnigan, Todd</td>
+                        <td class="email">keyboardz@tdmusicbox.edu</td>
+                        <td class="dbid">gjd4qfvd40</td>
+                        <td class="date"><time datetime="2022-02-24">2022-02-24</time></td>
+                    </tr>
+                    <tr id="user-i7a2ekbz19" class="user">
+                        <th class="photo"><img src="photo-alien.jpg" width="50" height="50" alt="Photo of Alien" /></th>
+                        <td class="id">5</td>
+                        <td class="name">Jourgensen, Alien</td>
+                        <td class="email">al@ministryband.com</td>
+                        <td class="dbid">i7a2ekbz19</td>
+                        <td class="date"><time datetime="2023-09-22">2023-09-22</time></td>
+                    </tr>
+                    <tr id="user-va9w8z4n80" class="user">
+                        <th class="photo"><img src="photo-stanley.jpg" width="50" height="50" alt="Photo of Stanley" /></th>
+                        <td class="id">1</td>
+                        <td class="name">Laurel, Stanley</td>
+                        <td class="email">stan.laurel@halroach.studio</td>
+                        <td class="dbid">va9w8z4n80</td>
+                        <td class="date"><time datetime="2020-12-23">2020-12-23</time></td>
+                    </tr>
+                    <tr id="user-llagynd39c" class="user">
+                        <th class="photo"><img src="photo-dweezel.jpg" width="50" height="50" alt="Photo of Dweezel" /></th>
+                        <td class="id">3</td>
+                        <td class="name">Zappa, Dweezel</td>
+                        <td class="email">dweezel@zappaplayszappa.com</td>
+                        <td class="dbid">llagynd39c</td>
+                        <td class="date"><time datetime="2022-03-17">2022-03-17</time></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Showing all <span id="users-count"></span> users</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
     </article>
     <article id="library" class="page page-library">
-        asdf
+        <header class="partial partial-header">
+            <h1>Library Links</h1>
+            <p>Essential reading for further CSS & Markup info</p>
+        </header>
     </article>
-    <article id="account" class="page page-library">
-        asdf
+    <article id="account" class="page page-account">
+        <header class="partial partial-header">
+            <h1>Your Account</h1>
+            <p>Manage essential account information here.</p>
+        </header>
     </article>
 </main>
 
-<aside id="loading" class="loader loader-spinner">
+<aside id="loading" class="partial partial-loader">
     <span class="icon icon-spinner"></span>
     <strong>Loading <span></span></strong>
 </aside>
@@ -120,18 +190,18 @@
             <form>
                 <fieldset>
                     <div class="row">
-                        <label for="email">
+                        <label for="login-email">
                             <span class="icon icon-letter"></span>
                             <strong>Email</strong>
                         </label>
-                        <input type="email" id="email" name="email" />
+                        <input type="email" id="login-email" name="email" />
                     </div>
                     <div class="row">
-                        <label for="email">
+                        <label for="login-password">
                             <span class="icon icon-lock"></span>
-                            <strong>Email</strong>
+                            <strong>Password</strong>
                         </label>
-                        <input type="password" id="password" name="password" />
+                        <input type="password" id="login-password" name="password" />
                     </div>
                 </fieldset>
                 <button id="button-login" type="button">
@@ -148,6 +218,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="scripts.js"></script>
+
 </body>
 
 </html>

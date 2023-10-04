@@ -1,8 +1,12 @@
 # CSS & Markup: Lesson 1
+
+---
+
 ## Introduction
 - How I know Ryan
 - Team Management & Agency Ownership
 - Abysmal Hiring of Devs
+- Styling & Markup is *not* programming
 - Clients don’t care about function… So long as it looks like it works
 - Understanding markup & styles is the key to making web apps work well
 
@@ -31,8 +35,8 @@
 - Markup strictness 
   - Screen Readers & Accessibility are important 
   - Deliberate Behaviors are important 
-  - If something is a link or navigates the user to a new screen, make it a damn anchor tag!
-  - If something is part of a list, make it a damn unordered/ordered list!
+  - If something is a link or navigates the user to a new screen, **make it a damn anchor tag!**
+  - If something is part of a list, **make it a damn unordered/ordered list!**
   - Make sure a computer knows your intent through markup 
 - File Structure 
   - Using @import for cleanliness 
@@ -47,12 +51,14 @@
   - display 
   - position 
   - box-sizing 
+  - Measurement Units
+    - em, rem, ex, px, vw, vh
 - Grid & Flex 
 - Targeting Devices 
   - Mobile First 
   - Anatomy of Media Query 
   - Other types of Media Queries 
-    - Print, Retna, Hyper specific 
+    - Print, Retina, Hyper specific 
   - Default image & component settings 
 - Classes & ID’s
   - Difference between ID’s and Classes
@@ -60,7 +66,8 @@
   - How to Name (Camel case & Dashes)
 - Crafting the Styles 
   - DRY Principle 
-  - Inheriting & Specificity 
+  - Variables
+  - Inheriting & Specificity
 - Making it Pretty 
   - Shadow, Border & Outline 
   - Gradients & Background Images 
@@ -75,7 +82,7 @@
 
 ## Included Assets
 - Github Repo: [github.com/domesticjones/cssmarkup-lesson1](https://github.com/domesticjones/cssmarkup-lesson1)
-- Icons (Icomoon Set):
+- Icons (Icomoon TTF with Fallback Set):
   - Home 
   - Users 
   - User 

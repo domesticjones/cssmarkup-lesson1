@@ -1,19 +1,23 @@
 /*
-CSS & Markup
-Lesson 1 - Intro to Markup & Responsive Styles
-
-CSS Import Document
+CSS & Markup - Lesson 1
+Intro to Markup & Responsive CSS Styles
  */
 
 /* Config */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700&family=Permanent+Marker&display=swap');
+@import 'css/variables.css';
 @import 'css/reset.css';
+@import 'css/icons.css';
 
 /* Global */
 @import 'css/base.css';
 @import 'css/header.css';
 @import 'css/footer.css';
-@import 'css/layout.css';
 
-/* Pages */
+/* Blocks & Partials */
+@import 'css/partials.css';
+@import 'css/blocks.css';
 
-/* Blocks */
+/* Pages & Views */
+@import 'css/pages.css';
+@import 'css/modals.css';
