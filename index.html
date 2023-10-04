@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS &amp; Markup - Lesson 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header header-branding">
+    <img src="logo-sampleapp.svg" width="100" height="50" class="logo" alt="Logo for Sample App" />
+    <img src="emblem-sapleapp.svg" width="50" height="50" class="emblem" alt="Emblem for Sample App" />
+</header>
+<header class="header header-nav">
+    <nav id="nav-primary" class="nav">
+        <ul class="menu menu-icons">
+            <li class="menu-item">
+                <a href="#home">
+                    <span class="icon icon-home"></span>
+                    <strong>Home</strong>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#users">
+                    <span class="icon icon-users"></span>
+                    <strong>Users</strong>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#library">
+                    <span class="icon icon-book"></span>
+                    <strong>Library</strong>
+                </a>
+            </li>
+            <li class="menu-item menu-hasChildren">
+                <a href="#" class="trigger-sub-menu">
+                    <span class="icon icon-user"></span>
+                    <strong>Account</strong>
+                </a>
+                <ul class="menu menu-child">
+                    <li class="menu-item menu-item-child menu-item-header">
+                        <a href="#">
+                            Hello, User!
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-child">
+                        <a href="#account">
+                            Edit Account Info
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-child">
+                        <a href="#login">
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content">
+    <article id="home" class="page page-home">
+        <header>
+            <h1>Your Dashboard</h1>
+        </header>
+        <section class="block block-text">
+            <h2>
+                It's <time><span></span></time>
+            </h2>
+            <p>Below are the things you can do on <time><span></span></time>s</p>
+        </section>
+        <section class="block block-buttons">
+            <nav class="buttons-large">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#users">
+                            <span class="icon icon-users"></span>
+                            <strong>View Users List</strong>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#library">
+                            <span class="icon icon-book"></span>
+                            <strong>View Entire Library</strong>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#account">
+                            <span class="icon icon-user"></span>
+                            <strong>View &amp; Edit Account</strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </article>
+    <article id="users" class="page page-users">
+        asdf
+    </article>
+    <article id="library" class="page page-library">
+        asdf
+    </article>
+    <article id="account" class="page page-library">
+        asdf
+    </article>
+</main>
+
+<aside id="loading" class="loader loader-spinner">
+    <span class="icon icon-spinner"></span>
+    <strong>Loading <span></span></strong>
+</aside>
+<aside id="login" class="modal modal-login">
+    <div class="modal-underlay"></div>
+    <div class="modal-container">
+        <div class="modal-content">
+            <form>
+                <fieldset>
+                    <div class="row">
+                        <label for="email">
+                            <span class="icon icon-letter"></span>
+                            <strong>Email</strong>
+                        </label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                    <div class="row">
+                        <label for="email">
+                            <span class="icon icon-lock"></span>
+                            <strong>Email</strong>
+                        </label>
+                        <input type="password" id="password" name="password" />
+                    </div>
+                </fieldset>
+                <button id="button-login" type="button">
+                    Log In
+                </button>
+            </form>
+        </div>
+    </div>
+</aside>
+
+<footer class="footer">
+    <p id="copyright">&copy; <time></time> Sample App, Inc. &bull; All Rights Reserved</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+
+</html>
