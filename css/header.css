@@ -33,6 +33,14 @@
     flex-direction: column;
 }
 
-.header-nav > .partial-menu > .menu > .menu-item > a > .icon {
+.header-nav > .partial-menu > .menu > .menu-item.is-active a {
+    color: var(--color-accent);
+}
 
+.header-nav > .partial-menu > .menu > .menu-item > a > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size--large);
+    height: var(--font-size--huge);
 }

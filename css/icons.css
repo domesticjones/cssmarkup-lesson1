@@ -38,11 +38,14 @@
 .icon-letter:before {
     content: "\e903";
 }
+.icon-lock:before {
+    content: "\e905";
+}
 .icon-spinner:before {
     content: "\e904";
 }
 .icon-user:before {
-    content: "\e905";
+    content: "\e907";
 }
 .icon-users:before {
     content: "\e906";

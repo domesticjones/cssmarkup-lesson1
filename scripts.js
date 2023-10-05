@@ -19,8 +19,13 @@ $('.menu a').click(e => {
     const menuClickTarget = $(e.currentTarget).attr('href');
     const menuClickTargetName = menuClickTarget.substring(1, menuClickTarget.length);
     if(menuClickTargetName.length > 0) {
+        $('.page, .menu-item').each((i,e) => {
+            $(e).removeClass('is-active');
+        });
         $('#loading').show();
         $('#loading h3 span').text(menuClickTargetName);
+        $(e.currentTarget).parent().addClass('is-active');
+        $(menuClickTarget).addClass('is-active');
         setTimeout(() => {
             $('#loading').fadeOut();
         }, 2000);

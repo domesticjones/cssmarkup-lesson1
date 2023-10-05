@@ -13,6 +13,11 @@
     justify-content: center;
     align-items: center;
     padding: var(--space-half);
+    text-transform: uppercase;
+}
+
+.partial-menu .menu a strong {
+    font-size: var(--font-size--small);
 }
 
 /* PARTIAL: Dropdown Menu */
@@ -54,9 +59,12 @@
 }
 
 /* PARTIAL: Menu */
+.partial-header {
+    padding: var(--space) var(--space) var(--space-half) 7rem;
+}
 .partial-header h1 {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
     font-size: var(--font-size--huge);
     text-transform: uppercase;
-    padding: var(--space) var(--space) var(--space-half) 7rem;
 }
