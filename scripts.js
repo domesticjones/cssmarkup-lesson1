@@ -19,8 +19,8 @@ $('.menu a').click(e => {
     const menuClickTarget = $(e.currentTarget).attr('href');
     const menuClickTargetName = menuClickTarget.substring(1, menuClickTarget.length);
     if(menuClickTargetName.length > 0) {
-        $('.page, .menu-item').each((i,e) => {
-            $(e).removeClass('is-active');
+        $('.page, .menu-item, .trigger-subMenu, .menu-child').each((i,me) => {
+            $(me).removeClass('is-active');
         });
         $('#loading').show();
         $('#loading h3 span').text(menuClickTargetName);
@@ -29,6 +29,11 @@ $('.menu a').click(e => {
         setTimeout(() => {
             $('#loading').fadeOut();
         }, 2000);
+    } else {
+        if($(e.currentTarget).hasClass('trigger-subMenu')) {
+            $(e.currentTarget).toggleClass('is-active');
+            $(e.currentTarget).next('.menu-child').toggleClass('is-active');
+        }
     }
 })
 

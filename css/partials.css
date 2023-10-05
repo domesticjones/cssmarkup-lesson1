@@ -22,7 +22,29 @@
 
 /* PARTIAL: Dropdown Menu */
 .partial-menu.menu-dropdown .menu-child {
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-accent);
+    padding: var(--space);
+    text-align: left;
+    box-shadow: var(--shadow-large);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease 200ms;
+}
+
+.partial-menu.menu-dropdown .menu-child.is-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-item--child.menu-item--header a {
+    color: var(--color-dark);
+}
+
+.trigger-subMenu.is-active {
+    color: var(--color-light);
 }
 
 /* PARTIAL: Loader */
@@ -58,13 +80,18 @@
     text-transform: capitalize;
 }
 
-/* PARTIAL: Menu */
+/* PARTIAL: Header */
 .partial-header {
     padding: var(--space) var(--space) var(--space-half) 7rem;
 }
+
 .partial-header h1 {
     margin: 0;
     padding: 0;
     font-size: var(--font-size--huge);
     text-transform: uppercase;
+}
+
+.partial-header p {
+    padding-bottom: 0;
 }

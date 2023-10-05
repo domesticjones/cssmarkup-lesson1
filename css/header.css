@@ -12,6 +12,7 @@
 /* HEADER: Primary Navigation */
 .header-nav {
     position: fixed;
+    z-index: 9990;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -43,4 +44,10 @@
     align-items: center;
     font-size: var(--font-size--large);
     height: var(--font-size--huge);
+}
+
+.header-nav .menu-child {
+    bottom: 6.25rem;
+    right: 0;
+    border-radius: 1rem 0 0 0;
 }
