@@ -76,6 +76,11 @@ ol {
     list-style-type: decimal;
 }
 
+/* Block Level Elements */
+img {
+    display: block;
+}
+
 /* Paragraph Level Elements */
 p {
     margin: 0;

@@ -8,6 +8,7 @@
     --space: 5vw;
     --space-half: 2.5vw;
     --space-double: 10vw;
+    --space-quad: 20vw;
 
     /* Typography */
     --font-family--default: 'Archivo', sans-serif;
@@ -33,6 +34,9 @@
     --color-dark--trans: rgba(51,51,51,0.5);
     --color-dark--sheer: rgba(51,51,51,0.25);
     --color-accent: #7FC37E;
+
+    /* Shadows */
+    --shadow-large: 0 0 var(--space-double) var(--color-dark--trans);
 }
 
 /* Tablet Up */
@@ -41,6 +45,7 @@
         --space: 3vw;
         --space-half: 1.5vw;
         --space-double: 6vw;
+        --space-quad: 12vw;
 
         --font-size--default: 16px;
     }
@@ -52,6 +57,7 @@
         --space: 2rem;
         --space-half: 1rem;
         --space-double: 4rem;
+        --space-quad: 8rem;
 
         --font-size--default: 18px;
     }

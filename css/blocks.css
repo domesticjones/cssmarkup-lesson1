@@ -1,0 +1,38 @@
+/* BLOCK: Users */
+.block-users {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.block-users .users {
+    min-width: var(--layout-width--read);
+}
+
+.block-users .user td {
+    vertical-align: middle;
+}
+
+.block-users .photo img {
+    width: var(--space-quad);
+    border-radius: 50%;
+}
+
+.block-users .users-footer {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-size: small;
+    padding: var(--space-half) var(--space);
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .block-users {
+        overflow-x: hidden;
+    }
+
+    .block-users .users-footer {
+        width: auto;
+    }
+}

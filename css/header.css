@@ -1,0 +1,38 @@
+/* HEADER: Branding */
+.header-branding {
+    position: absolute;
+    width: 7rem;
+    padding: var(--space-half) var(--space);
+}
+
+.header-branding .logo {
+    display: none;
+}
+
+/* HEADER: Primary Navigation */
+.header-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 var(--space-half);
+    background-color: var(--color-dark);
+    box-shadow: var(--shadow-large);
+}
+
+.header-nav a {
+    color: var(--color-light--alt);
+}
+
+.header-nav > .partial-menu > .menu > .menu-item {
+    width: 25%;
+}
+
+.header-nav > .partial-menu > .menu > .menu-item > a {
+    height: 6rem;
+    flex-direction: column;
+}
+
+.header-nav > .partial-menu > .menu > .menu-item > a > .icon {
+
+}

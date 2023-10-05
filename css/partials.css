@@ -1,3 +1,25 @@
+/* PARTIAL: Menu */
+.partial-menu .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.partial-menu .menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-half);
+}
+
+/* PARTIAL: Dropdown Menu */
+.partial-menu.menu-dropdown .menu-child {
+    display: none;
+}
+
 /* PARTIAL: Loader */
 .partial-loader {
     position: fixed;
@@ -29,4 +51,12 @@
 }
 .partial-loader h3 span {
     text-transform: capitalize;
+}
+
+/* PARTIAL: Menu */
+.partial-header h1 {
+    margin-top: 0;
+    font-size: var(--font-size--huge);
+    text-transform: uppercase;
+    padding: var(--space) var(--space) var(--space-half) 7rem;
 }
