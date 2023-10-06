@@ -12,6 +12,9 @@
 - Success comes from knowing how to ask the question and what answer to accept
 
 ## The Lesson
+- Tools
+  - Chrome Layouts
+  - IDE Functions
 - Fully styled Admin Panel
   - Mobile
   - Tablet 
