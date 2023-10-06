@@ -9,10 +9,10 @@
 - Styling & Markup is *not* programming
 - Clients don’t care about function… So long as it looks like it works
 - Understanding markup & styles is the key to making web apps work well
-- Success comes from knowing how to ask the question and what answer to accept
 
 ## The Lesson
 - Tools
+  - Versioning Overview
   - Chrome Layouts
   - IDE Functions
 - Fully styled Admin Panel
