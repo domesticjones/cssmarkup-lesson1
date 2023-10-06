@@ -20,6 +20,11 @@ body {
     font-smoothing: antialiased;
 }
 
+#content {
+    position: relative;
+    z-index: 1;
+}
+
 /* Heading Level Elements */
 h1,
 h2,

@@ -60,10 +60,15 @@
         position: relative;
         width: 100%;
         border-bottom: 1px solid var(--color-dark--sheer);
+        z-index: -1;
     }
 
     .header-branding .emblem {
-        display: none;
+        position: fixed;
+        width: 65vw;
+        bottom: 5vh;
+        right: -5vh;
+        opacity: 0.15;
     }
 
     .header-branding .logo {
@@ -78,6 +83,11 @@
         padding: var(--space);
         width: 300px;
         border-bottom: none;
+        z-index: 9998;
+    }
+
+    .header-branding .emblem {
+        display: none;
     }
 
     .header-nav {
@@ -87,6 +97,11 @@
         background-color: var(--color-light--alt);
         box-shadow: var(--shadow-small);
     }
+
+    .header-nav a {
+        color: var(--color-dark);
+    }
+
 
     .header-nav > .partial-menu > .menu > .menu-item {
         width: 100%;

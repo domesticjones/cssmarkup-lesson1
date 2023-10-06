@@ -3,6 +3,7 @@
     padding: var(--space-half) var(--space);
     border-top: 1px solid var(--color-dark--sheer);
     margin-top: var(--space);
+    max-width: var(--layout-width--max);
 }
 
 .block > *:last-child {

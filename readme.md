@@ -59,7 +59,9 @@
   - Anatomy of Media Query 
   - Other types of Media Queries 
     - Print, Retina, Hyper specific 
-  - Default image & component settings 
+  - Default image & component settings
+- Modern CSS Development
+  - Using Vars
 - Classes & ID’s
   - Difference between ID’s and Classes
   - Inheritance between classes & ID’s

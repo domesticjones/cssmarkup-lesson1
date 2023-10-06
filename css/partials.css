@@ -114,4 +114,31 @@
         margin-top: 4rem;
         flex-direction: column;
     }
+
+    .partial-menu.menu-dropdown .menu-child {
+        transform: translate(0,0);
+        opacitY: 1;
+        position: static;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        margin: 0;
+        font-size: var(--font-size--small);
+    }
+
+
+    .partial-menu .menu-item--child.menu-item--header {
+        display: none;
+    }
+
+    .partial-menu .menu-item--child a {
+        color: var(--color-dark);
+        text-transform: none;
+        font-weight: var(--font-weight--normal);
+        padding: 0 0 0.25rem 2.5rem;
+    }
+
+    .partial-menu .menu-item--child a:hover {
+        color: var(--color-accent);
+    }
 }
