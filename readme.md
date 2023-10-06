@@ -9,6 +9,7 @@
 - Styling & Markup is *not* programming
 - Clients don’t care about function… So long as it looks like it works
 - Understanding markup & styles is the key to making web apps work well
+- Success comes from knowing how to ask the question and what answer to accept
 
 ## The Lesson
 - Fully styled Admin Panel
@@ -62,6 +63,9 @@
   - Default image & component settings
 - Modern CSS Development
   - Using Vars
+  - Advanced Delimiters
+  - Pseudo classes & elements
+  - CanIUse
 - Classes & ID’s
   - Difference between ID’s and Classes
   - Inheritance between classes & ID’s

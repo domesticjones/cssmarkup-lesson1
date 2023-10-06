@@ -20,6 +20,10 @@ body {
     font-smoothing: antialiased;
 }
 
+a {
+    color: var(--color-accent);
+}
+
 #content {
     position: relative;
     z-index: 1;

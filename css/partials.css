@@ -14,6 +14,7 @@
     align-items: center;
     padding: var(--space-half);
     text-transform: uppercase;
+    transition: all ease 350ms;
 }
 
 .partial-menu .menu a strong {
@@ -45,6 +46,49 @@
 
 .trigger-subMenu.is-active {
     color: var(--color-light);
+}
+
+/* PARTIAL: Buttons Menu */
+.partial-menu.menu-buttons ul {
+    flex-direction: column;
+}
+
+.partial-menu.menu-buttons ul li {
+    width: 100%;
+    margin: 0;
+}
+
+.partial-menu.menu-buttons ul li a {
+    background-color: var(--color-dark);
+    color: var(--color-light--alt);
+    flex-direction: column;
+    padding: var(--space);
+    margin-bottom: var(--space);
+    border-radius: var(--space);
+}
+
+.partial-menu.menu-buttons ul li:last-child a {
+    margin-bottom: 0;
+}
+
+.partial-menu.menu-buttons ul li a .icon {
+    font-size: var(--font-size--huge);
+    margin-bottom: 1rem;
+}
+
+.partial-menu.menu-buttons a {
+    justify-content: flex-start;
+}
+
+.partial-menu.menu-buttons a:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.025);
+    box-shadow: var(--shadow-small);
+}
+
+.partial-menu.menu-buttons a:active {
+    transform: scale(0.975);
+    box-shadow: inset var(--shadow-large);
 }
 
 /* PARTIAL: Loader */
@@ -106,15 +150,21 @@
         padding-bottom: 0;
         margin-bottom: 0;
     }
+
+    .partial-menu.menu-buttons ul {
+        flex-direction: row;
+        justify-content: stretch;
+        gap: 1rem;
+    }
+
+    .partial-menu.menu-buttons ul li a {
+        height: 100%;
+        margin: 0;
+    }
 }
 
 /* PARTIAL: Responsive - Desktop */
 @media screen and (min-width: 1024px) {
-    .partial-menu .menu {
-        margin-top: 4rem;
-        flex-direction: column;
-    }
-
     .partial-menu.menu-dropdown .menu-child {
         transform: translate(0,0);
         opacitY: 1;

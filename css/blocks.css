@@ -11,6 +11,12 @@
     margin-bottom: 0;
 }
 
+/* BLOCK: Buttons */
+.block-buttons {
+    padding-top: 0;
+    border-top: 0;
+}
+
 /* BLOCK: Users */
 .block-users {
     max-width: 100%;

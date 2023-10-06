@@ -3,7 +3,7 @@
     position: absolute;
     z-index: 9998;
     width: 7rem;
-    padding: var(--space-half) var(--space);
+    padding: var(--space);
 }
 
 .header-branding .logo {
@@ -96,12 +96,17 @@
         padding: var(--space);
         background-color: var(--color-light--alt);
         box-shadow: var(--shadow-small);
+        margin-top: 4rem;
     }
 
     .header-nav a {
         color: var(--color-dark);
     }
 
+    .header-nav > .partial-menu > .menu {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
 
     .header-nav > .partial-menu > .menu > .menu-item {
         width: 100%;
