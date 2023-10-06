@@ -3,8 +3,8 @@
 ---
 
 ## Introduction
-- How I know Ryan
-- Team Management & Agency Ownership
+- How I know the instructor
+- My Team Management & Agency Ownership
 - Abysmal Hiring of Devs
 - Styling & Markup is *not* programming
 - Clients don’t care about function… So long as it looks like it works
@@ -12,14 +12,15 @@
 
 ## The Lesson
 - Tools
+  - Verbiage and web/app interchanging
   - Versioning Overview
   - Chrome Layouts
   - IDE Functions
-- Fully styled Admin Panel
+- Show Fully styled Admin Panel
   - Mobile
   - Tablet 
   - Desktop 
-- Semantic Markup 
+- Why Semantic Markup?
   - Loading Order
   - SEO & Indexing 
   - Screen Readers & Accessibility 
@@ -39,20 +40,32 @@
 - Markup strictness 
   - Screen Readers & Accessibility are important 
   - Deliberate Behaviors are important 
+  - Horror Stories from past dev's
   - If something is a link or navigates the user to a new screen, **make it a damn anchor tag!**
   - If something is part of a list, **make it a damn unordered/ordered list!**
   - Make sure a computer knows your intent through markup 
 - File Structure 
   - Using @import for cleanliness
   - Dividing by components and project parts
+- Modern CSS Development
+  - Using Vars
+  - Advanced Delimiters
+  - Pseudo classes & elements
+  - CanIUse
+- Classes & ID’s
+  - Difference between ID’s and Classes
+  - Inheritance between classes & ID’s
+  - How to Name (Camel case & Dashes)
+- Crafting the Styles
+  - DRY Principle
+  - Variables
 - Inheritance & Hierarchy 
   - Resets are Lifesavers
-  - DRY Principle
   - Specificity by Naming
   - Specificity in chains
   - Specific Delimiters
 - The “Block” method 
-  - Block Level Elements 
+  - Block vs Inline Elements 
   - Margin vs Padding 
   - Left/Right/Top/Bottom values 
   - Layering blocks for effect 
@@ -63,30 +76,19 @@
   - Measurement Units
     - em, rem, ex, px, vw, vh
 - Grid & Flex 
+  - Blocks & Lists
+  - Resetting the layouts for more control
+- Making it Pretty
+  - Shadow, Border & Outline
+  - Gradients & Background Images
+  - Accessibility & Contrast
+  - Designers vs Developers
 - Targeting Devices 
   - Mobile First 
   - Anatomy of Media Query 
   - Other types of Media Queries 
     - Print, Retina, Hyper specific 
   - Default image & component settings
-- Modern CSS Development
-  - Using Vars
-  - Advanced Delimiters
-  - Pseudo classes & elements
-  - CanIUse
-- Classes & ID’s
-  - Difference between ID’s and Classes
-  - Inheritance between classes & ID’s
-  - How to Name (Camel case & Dashes)
-- Crafting the Styles 
-  - DRY Principle 
-  - Variables
-  - Inheriting & Specificity
-- Making it Pretty 
-  - Shadow, Border & Outline 
-  - Gradients & Background Images 
-  - Accessibility & Contrast 
-  - Designers vs Developers 
 - Marrying CSS & JS 
   - Adding/toggling classes 
   - Use CSS Animations instead of JS whenever possible 
