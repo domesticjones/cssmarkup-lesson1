@@ -19,16 +19,86 @@
 
 /* BLOCK: Users */
 .block-users {
+    position: relative;
+    padding: var(--space) 0;
+}
+
+.users-table-wrap {
     max-width: 100%;
     overflow-x: auto;
 }
 
+.block-users:before,
+.block-users:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: var(--space);
+    height: 100%;
+    background-color: var(--color-accent);
+}
+
+.block-users:before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-light), transparent);
+}
+
+.block-users:after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-light), transparent);
+}
+
 .block-users .users {
     min-width: var(--layout-width--read);
+    width: 100%;
+}
+
+.block-users .users th {
+    font-size: var(--font-size--small);
+    font-weight: var(--font-weight--bold);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.block-users .users th,
+.block-users .users td {
+    padding: 0 1ex;
+}
+
+.block-users .users .id {
+    text-align: center;
+}
+
+.block-users .users td.id {
+    font-size: var(--font-size--large);
+    color: var(--color-accent);
+    font-weight: var(--font-weight--bold);
+}
+
+.block-users .users td.email {
+    font-size: var(--font-size--small);
+}
+
+.block-users .users td.name {
+    font-size: var(--font-size--bump);
+}
+
+.block-users .users td.dbid {
+    color: var(--color-dark--trans);
+}
+
+.block-users .users td.date {
+    padding-right: var(--space);
 }
 
 .block-users .user td {
     vertical-align: middle;
+    min-width: 3ex;
+}
+
+.block-users td.photo {
+    padding: var(--space-half) 0 var(--space-half) var(--space);
 }
 
 .block-users .photo img {
@@ -44,6 +114,8 @@
     font-size: small;
     padding: var(--space-half) var(--space);
     text-align: center;
+    font-style: italic;
+    color: var(--color-dark--trans);
 }
 
 @media screen and (min-width: 1024px) {

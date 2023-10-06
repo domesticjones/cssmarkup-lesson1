@@ -1,0 +1,13 @@
+#copyright {
+    border-top: 1px solid var(--color-dark--sheer);
+    padding: var(--space);
+    color: var(--color-dark--trans);
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+    #copyright {
+        margin-top: var(--space);
+        padding-left: calc(300px + var(--space-double));
+    }
+}

@@ -40,9 +40,14 @@
   - If something is part of a list, **make it a damn unordered/ordered list!**
   - Make sure a computer knows your intent through markup 
 - File Structure 
-  - Using @import for cleanliness 
+  - Using @import for cleanliness
+  - Dividing by components and project parts
 - Inheritance & Hierarchy 
-  - Resets are Lifesavers 
+  - Resets are Lifesavers
+  - DRY Principle
+  - Specificity by Naming
+  - Specificity in chains
+  - Specific Delimiters
 - The “Block” method 
   - Block Level Elements 
   - Margin vs Padding 
