@@ -1,3 +1,15 @@
+/* BLOCK: Defaults */
+.block {
+    padding: var(--space-half) var(--space);
+    border-top: 1px solid var(--color-dark--sheer);
+    margin-top: var(--space);
+}
+
+.block > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 /* BLOCK: Users */
 .block-users {
     max-width: 100%;
@@ -28,6 +40,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .block:first-of-type {
+        border-top: none;
+        margin-top: 0;
+    }
+
     .block-users {
         overflow-x: hidden;
     }

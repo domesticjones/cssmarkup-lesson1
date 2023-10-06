@@ -118,3 +118,10 @@ sub {
     font-size: var(--font-size--tiny);
     vertical-align: sub;
 }
+
+/* Responsive - Desktop */
+@media screen and (min-width: 1024px) {
+    #content {
+        padding-left: calc(300px + var(--space));
+    }
+}

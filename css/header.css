@@ -1,12 +1,14 @@
 /* HEADER: Branding */
 .header-branding {
     position: absolute;
+    z-index: 9998;
     width: 7rem;
     padding: var(--space-half) var(--space);
 }
 
 .header-branding .logo {
     display: none;
+    max-width: 240px;
 }
 
 /* HEADER: Primary Navigation */
@@ -50,4 +52,60 @@
     bottom: 6.25rem;
     right: 0;
     border-radius: 1rem 0 0 0;
+}
+
+/* HEADER: Responsive - Tablet */
+@media screen and (min-width: 768px) {
+    .header-branding {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid var(--color-dark--sheer);
+    }
+
+    .header-branding .emblem {
+        display: none;
+    }
+
+    .header-branding .logo {
+        display: block;
+    }
+}
+
+/* PARTIAL: Responsive - Desktop */
+@media screen and (min-width: 1024px) {
+    .header-branding {
+        position: absolute;
+        padding: var(--space);
+        width: 300px;
+        border-bottom: none;
+    }
+
+    .header-nav {
+        width: 300px;
+        height: 100%;
+        padding: var(--space);
+        background-color: var(--color-light--alt);
+        box-shadow: var(--shadow-small);
+    }
+
+    .header-nav > .partial-menu > .menu > .menu-item {
+        width: 100%;
+    }
+
+    .header-nav > .partial-menu > .menu > .menu-item > a {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        padding-left: 0;
+        color: var(--color-dark);
+    }
+
+    .header-nav > .partial-menu > .menu > .menu-item > a:hover {
+        color: var(--color-accent);
+    }
+
+    .header-nav > .partial-menu > .menu > .menu-item > a > .icon {
+        height: auto;
+        margin-right: 1rem;
+    }
 }

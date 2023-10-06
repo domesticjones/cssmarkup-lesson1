@@ -29,7 +29,7 @@
 
     /* Colors */
     --color-light: #FFFFFF;
-    --color-light--alt: #FEFEE2;
+    --color-light--alt: #f2f2f2;
     --color-dark: #333333;
     --color-dark--trans: rgba(51,51,51,0.5);
     --color-dark--sheer: rgba(51,51,51,0.25);
@@ -37,6 +37,7 @@
 
     /* Shadows */
     --shadow-large: 0 0 var(--space-double) var(--color-dark--trans);
+    --shadow-small: 0 0 var(--space-half) var(--color-dark--trans);
 }
 
 /* Tablet Up */
